@@ -171,4 +171,3 @@ Se tiver dúvidas ou sugestões, entre em contato! 😊
 ---
 
 > Projeto desenvolvido como parte de um estudo acadêmico na Universidade Tecnológica Federal do Paraná (UTFPR).
-```

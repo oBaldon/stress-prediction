@@ -45,7 +45,7 @@ Os dados foram tratados, normalizados e analisados estatisticamente para garanti
 │── 📂 notebooks            # Notebooks Jupyter com as análises e treinamentos
 │── 📂 models               # Modelos treinados e serializados
 │── 📂 illustrations        # Imagens e gráficos gerados
-│── 📄 utfpr-article.tex    # Artigo em LaTeX descrevendo o estudo
+│── 📄 utfpr-article.pdf    # Artigo descrevendo o estudo
 │── 📄 requirements.txt     # Dependências do projeto
 │── 📄 README.md            # Documentação do projeto
 ```

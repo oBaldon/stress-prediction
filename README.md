@@ -41,13 +41,47 @@ Os dados foram tratados, normalizados e analisados estatisticamente para garanti
 
 ```bash
 📁 stress-prediction
-│── 📂 data                 # Conjunto de dados utilizados
-│── 📂 notebooks            # Notebooks Jupyter com as análises e treinamentos
-│── 📂 models               # Modelos treinados e serializados
-│── 📂 illustrations        # Imagens e gráficos gerados
-│── 📄 utfpr-article.pdf    # Artigo descrevendo o estudo
-│── 📄 requirements.txt     # Dependências do projeto
-│── 📄 README.md            # Documentação do projeto
+│── 📂 data                   # Conjunto de dados utilizados
+│   │── 📂 raw                # Dados brutos
+│   │   └── student_health_data.csv
+│   │── 📂 processed          # Dados tratados
+│       └── processed_data.csv
+│── 📂 notebooks              # Notebooks Jupyter com as análises e treinamentos
+│── 📂 models                 # Modelos treinados e serializados
+│   │── 📂 trained_models     # Modelos salvos
+│   │   ├── LogisticRegression.pkl
+│   │   ├── NeuralNetwork.pkl
+│   │   ├── RandomForest.pkl
+│   │   └── scaler.pkl
+│   └── train_model.py        # Script de treinamento dos modelos
+│── 📂 illustrations          # Imagens e gráficos gerados
+│   ├── activity_vs_stress.png
+│   ├── confusion_matrix_all_models.png
+│   ├── correlation_matrix.png
+│   ├── feature_importance.png
+│   ├── model_comparison.png
+│   ├── sleep_vs_stress.png
+│   └── stress_distribution.png
+│── 📂 src                    # Código-fonte do projeto
+│   │── 📂 analysis           # Scripts para análise de dados
+│   │   ├── confusion_matrix.py
+│   │   ├── exploratory_analysis.py
+│   │   ├── feature_importance.py
+│   │   └── model_performance_comparison.py
+│   │── 📂 preprocessing      # Scripts de pré-processamento dos dados
+│   │   └── preprocess.py
+│   │── 📂 reports            # Relatórios gerados pelo modelo
+│   │   │── 📂 model_performance
+│   │   │   ├── classification_report_LogisticRegression.csv
+│   │   │   ├── classification_report_NeuralNetwork.csv
+│   │   │   └── classification_report_RandomForest.csv
+│   │   └── 📂 figures        # Gráficos e visualizações dos resultados
+│   │── 📂 utils              # Utilitários e funções auxiliares
+│   │   └── verify.py
+│── 📄 utfpr-article.tex       # Artigo em LaTeX descrevendo o estudo
+│── 📄 requirements.txt        # Dependências do projeto
+│── 📄 README.md               # Documentação do projeto
+│── 📄 Fatores_Determinantes_do_Estresse_Acadêmico__Uma_Abordagem_Baseada_em_Dados_e_Aprendizado_de_Máquina.pdf  # Artigo em PDF
 ```
 
 ---
@@ -84,9 +118,10 @@ As principais descobertas incluem:
    ```bash
    pip install -r requirements.txt
    ```
-5. Execute os notebooks para visualizar as análises e os modelos:
+5. Execute os scripts para visualizar as análises e os modelos:
    ```bash
-   jupyter notebook
+   python src/models/train_model.py
+   ...
    ```
 
 ---

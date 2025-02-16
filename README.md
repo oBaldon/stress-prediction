@@ -78,10 +78,9 @@ Os dados foram tratados, normalizados e analisados estatisticamente para garanti
 │   │   └── 📂 figures        # Gráficos e visualizações dos resultados
 │   │── 📂 utils              # Utilitários e funções auxiliares
 │   │   └── verify.py
-│── 📄 utfpr-article.tex       # Artigo em LaTeX descrevendo o estudo
+│── 📄 utfpr-article.pdf       # Artigo em PDF descrevendo o estudo
 │── 📄 requirements.txt        # Dependências do projeto
 │── 📄 README.md               # Documentação do projeto
-│── 📄 Fatores_Determinantes_do_Estresse_Acadêmico__Uma_Abordagem_Baseada_em_Dados_e_Aprendizado_de_Máquina.pdf  # Artigo em PDF
 ```
 
 ---
